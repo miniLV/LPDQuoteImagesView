@@ -113,8 +113,10 @@
   cell.videoThumbnail.hidden = YES;
   if(_selectedPhotos.count<_maxSelectedCount) {
     if (indexPath.row == _selectedPhotos.count) {
-      [cell.imageThumbnail setImage:[UIImage imageNamedFromMyBundle:@"AlbumAddBtn.png"]];
-      cell.imageThumbnail.layer.borderWidth = 2;
+        
+#warning 替换公司图标
+        [cell.imageThumbnail setImage:[UIImage imageNamedFromMyBundle:@"意见反馈添加图片@3x.png"]];
+      cell.imageThumbnail.layer.borderWidth = 0.5;
       cell.nookDeleteBtn.hidden = YES;
       
     } else {

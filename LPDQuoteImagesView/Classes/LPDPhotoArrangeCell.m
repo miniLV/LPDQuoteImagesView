@@ -21,9 +21,9 @@
         _imageThumbnail = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.lpd_width, self.lpd_height)];
         _imageThumbnail.backgroundColor = [UIColor colorWithWhite:1 alpha:0.5];
         _imageThumbnail.contentMode = UIViewContentModeScaleToFill;
-        _imageThumbnail.layer.cornerRadius = 4;
-        _imageThumbnail.layer.borderColor = [[UIColor groupTableViewBackgroundColor] CGColor];
-        _imageThumbnail.layer.borderWidth = 2;
+        _imageThumbnail.layer.cornerRadius = 5;
+        _imageThumbnail.layer.borderColor = [[UIColor lightGrayColor] CGColor];
+        _imageThumbnail.layer.borderWidth = 0.3;
         _imageThumbnail.clipsToBounds = YES;
         [self addSubview:_imageThumbnail];
         
@@ -35,7 +35,7 @@
         _nookDeleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [self setupDeleteBtn:DEL_BTN_WH];
         [self addSubview:_nookDeleteBtn];
-     }
+    }
     return self;
 }
 
