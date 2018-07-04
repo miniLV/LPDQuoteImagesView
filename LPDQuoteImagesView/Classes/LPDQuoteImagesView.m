@@ -115,7 +115,7 @@
     if (indexPath.row == _selectedPhotos.count) {
         
 #warning 替换公司图标
-        [cell.imageThumbnail setImage:[UIImage imageNamedFromMyBundle:@"意见反馈添加图片@3x.png"]];
+        [cell.imageThumbnail setImage:[UIImage imageNamedFromMyBundle:@"zy-pai@3x.png"]];
       cell.imageThumbnail.layer.borderWidth = 0;
       cell.nookDeleteBtn.hidden = YES;
       
